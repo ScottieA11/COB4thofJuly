@@ -1,91 +1,196 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
-.clearfix:before, .clearfix:after { content: ''; display: table; }
-.clearfix:after { clear: both; }
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
 
-.american-beach{
+.clearfix:after {
+    clear: both;
+}
+
+.about-img{
+    width: auto;
+    max-width: 3%;
+}
+
+.american-beach {
     width: inherit;
-    height: 450px;
     overflow: hidden;
+    margin-top: 10px;
+    background-image: url('../assets/images/overlayfire.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-origin: padding-box;
+    background-position: top;
 }
 
-.americanbeach-img{
-    width: inherit;
-    display: block;
-    object-position: center;
-    position: relative;
-    transform: translate(0%, -36%) }
-}
-
-.Brownsville
-{
+.Brownsville {
     object-position: center;
     display: block;
-    margin: 0px;
+    margin: 10px;
     max-height: 200px;
-    max-width: 50%;
-    width: 10%;
-
-
+    max-width: 60%;
+    width: auto;
+    left: 20%;
+    position: relative;
+    align-self: ;
+    ;
 }
+
+.btn-custom {
+    background-color: hsl(360, 100%, 100%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+    background-image: linear-gradient(#ffffff, #ffffff);
+    border-color: #ffffff #ffffff hsl(360, 100%, 100%);
+    color: #BF0A30 !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.00);
+    width: auto;
+    min-width: 100px;
+    -webkit-font-smoothing: antialiased;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
+
+
 /* Carousel base class */
+
 .carousel {
-  height: 600px;
-  margin-bottom: 0px;
+    height: 600px;
+    margin-bottom: 0px;
     background-color: transparent;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 2;
-    color: black;
 
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+    z-index: 2;
+    color: black;
 }
+
 
 /* Declare heights because of positioning of img element */
+
 .carousel .item {
-  height: 600px;
-  background-color: transparent;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 600px;
-background-color: transparent;
+    height: 600px;
+    background-color: transparent;
 }
 
-  /* Bump up size of carousel content */
-  .carousel-caption p {
+.carousel-inner>.item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 600px;
+    background-color: transparent;
+}
+
+
+/* Bump up size of carousel content */
+
+.carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
-  }
-
-.carousel-indicators{
-    color: black;
-
 }
 
-.COBNavLogo
-{
+.carousel-indicators {
+    color: black;
+}
+
+.COBNavLogo {
     width: 125px;
     height: 125px;
 }
 
-.c-american
-{
-    height: 450px;
-    width:inherit;
-    margin: auto;
-   overflow: hidden
+.c-american {
+    margin: inherit;
+    overflow: hidden;
+    background-image: url('../assets/images/Layer 0.png');
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
 }
 
-.flagImage
-{
+
+
+.c-american-text {
+    width: inherit;
+    overflow: auto;
+    margin: 50px;
+    padding: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    word-spacing: 5px;
+}
+
+.donation-text {
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0%;
+    padding: inherit;
+    text-align: center;
+    text-overflow: inherit;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-stretch: expanded;
+}
+
+.donate-h3 {
+    color: #BF0A30;
+}
+
+.donate-button {
+    width: auto;
+    min-width: 100px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    color: #BF0A30;
+}
+
+.donation-image {
+    margin: 1px;
+    padding: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+.donation-img-size {
+    width: 15%;
+}
+
+.donation-location {
+    margin-left: 15%;
+}
+
+.donation-table {
+    margin: 5px;
+    padding: 5px;
+    margin-top: 5%;
+}
+
+.flagImage {
     display: inherit;
     overflow-y: hidden;
     width: inherit;
@@ -94,16 +199,16 @@ background-color: transparent;
     overflow-x: hidden;
 }
 
-.footer-section{
-    height: 400px;
-    background-color: navy;
+.footer-section {
+    height: 200px;
+    background-color: #BF0A30;
     width: auto;
     margin: 0px;
     border-color: gray;
     border-width: thin;
 }
 
-.info-section{
+.info-section {
     background-color: #FFFFFF;
     background-image: url(../assets/images/COBHall.png);
     background-position: center;
@@ -111,8 +216,7 @@ background-color: transparent;
     display: block;
     background-repeat: no-repeat;
     width: inherit;
-    height: 700px;
-    margin: 5,10,5,10;
+    margin: 5, 10, 5, 10;
     opacity: 1.0;
 }
 
@@ -124,12 +228,16 @@ background-color: transparent;
     height: 800px;
 }
 
-.left{
+.left {
     background-color: transparent;
 }
 
-.right{
+.right {
     background-color: transparent;
+}
+
+.nav {
+    color: white;
 }
 
 .navbar {
@@ -146,53 +254,125 @@ background-color: transparent;
     word-spacing: normal;
     letter-spacing: 8px;
     background-color: #E0162B;
+    color: #FFFFFF;
 }
-.navbar-header
-{
+
+.navbar-header {
     background-color: transparent;
 }
 
-.navbar-load
-{
+.navbar-load {}
 
-}
-
-
-.navbar-default .navbar-nav > li > a {
-    color: #ffffff;
+.navbar-default .navbar-nav>li>a {
     font-family: "aller", sans-serif;
-    font-weight: 100;
+    font-weight: 50;
     word-spacing: 50px;
     line-height: 100px;
-    padd
+    color: white;
 }
-.navbar-brand
-{
+
+.navbar-brand {
     background-color: transparent;
 }
+
 .navbar .navbar-nav {
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 5%;
     padding-left: 70%;
-
+    color: white;
     float: none;
     vertical-align: middle;
-
 }
+
 .navbar .navbar-collapse {
-  text-align: center;
-
+    text-align: center;
 }
+
 .navbar-nav li a:hover {
-    color: #FFFFFF !important;
+    color: #4286f4 !important;
+    background-color: transparent;
+    border: 1px;
+    border-bottom-width: thin;
+    border-color: #FFFFFF;
 }
 
-.tree-section{
-    background-color: dodgerblue;
-    height: 1000px;
+.nav.navbar-nav.navbar-nav li a {
+    color: white;
+}
+
+
+/*-- End Nav --*/
+
+.tree-section {
+    background-color: #002868;
+    height: 650px;
     width: inherit;
-
+    padding: 15px;
 }
 
 
+/*--- Footer ----*/
+
+.hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    margin: 8px 0px;
+}
+
+.hr-sect::before,
+.hr-sect::after {
+    content: "";
+    flex-grow: 1;
+    background: white;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 8px;
+}
+
+.footer-left {
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-right {
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.media-table {
+    align-items: center;
+}
+
+.media-table td {
+    text-align: center;
+    padding-left: 15px;
+}
+
+.media-table a {
+    color: white;
+}
+
+.media-table a:hover {
+    color: red;
+    transition: 1s;
+}
+
+.contact-table {
+    align-items: center;
+}
+
+.contact-table td {
+    text-align: center;
+    padding-left: 3px;
+}
