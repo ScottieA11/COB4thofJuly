@@ -26,15 +26,15 @@
 }
 
 .american-beach {
-    width: inherit;
+    width: auto;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: auto;
     background-image: url('../assets/images/overlayfire.png');
     height: 500px;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-origin: padding-box;
-    background-position: top;
+    background-size: auto;
+    width: auto;
+    background-position: center;
 }
 
 .bbq-img{
@@ -127,6 +127,10 @@
 
 .carousel-li{
     background-color: #bf0a30;
+}
+
+.carousel.text{
+    
 }
 
 .COBNavLogo {
@@ -239,11 +243,11 @@
     background-image: url(../assets/images/COBHall.png);
     background-position: center;
     background-size: cover;
-    display: block;
+    display: inherit;
     background-repeat: no-repeat;
     width: inherit;
-    margin: 5, 10, 5, 10;
-    opacity: 1.0;
+    margin: auto;
+    overflow: hidden;
 }
 
 .jumbotron {
