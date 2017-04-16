@@ -8,6 +8,10 @@
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
+
+
+
+/** Main Load Animation **/
 (function() {
 
 	var support = { animations : Modernizr.cssanimations },
@@ -86,3 +90,15 @@
 	init();
 
 })();
+/** END OF LOAD **/
+
+/** GOOGLE MAPS **/
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(26.003905,-97.518868),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+/** END GOOGLE MAPS **/

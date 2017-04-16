@@ -15,9 +15,14 @@
     clear: both;
 }
 
-.about-img{
+.about-img {
     width: auto;
-    max-width: 3%;
+    max-width: 6%;
+}
+
+.about-co {
+    height: 800px;
+    position: relative;
 }
 
 .american-beach {
@@ -30,6 +35,10 @@
     background-size: 100%;
     background-origin: padding-box;
     background-position: top;
+}
+
+.bbq-img{
+    width: 30%;
 }
 
 .Brownsville {
@@ -111,8 +120,13 @@
     line-height: 1.4;
 }
 
-.carousel-indicators {
-    color: black;
+.carousel-indicators.li {
+    color: #bf0a30;
+    background-color: #bf0a30;
+}
+
+.carousel-li{
+    background-color: #bf0a30;
 }
 
 .COBNavLogo {
@@ -130,16 +144,18 @@
     height: 400px;
 }
 
-
-
 .c-american-text {
     width: inherit;
     overflow: auto;
-    margin: 50px;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
-    color: #FFFFFF;
+    color: #002868;
     word-spacing: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .donation-text {
@@ -190,6 +206,16 @@
     margin-top: 5%;
 }
 
+.event-map {
+    width: 450px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    padding: inherit;
+    margin-left: 20%;
+}
+
 .flagImage {
     display: inherit;
     overflow-y: hidden;
@@ -201,7 +227,7 @@
 
 .footer-section {
     height: 200px;
-    background-color: #BF0A30;
+    background-color: #002868;
     width: auto;
     margin: 0px;
     border-color: gray;
@@ -224,16 +250,67 @@
     margin: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: #E0162B;
-    height: 800px;
+    background-color: #BF0A30;
+    height: 900px;
 }
 
 .left {
     background-color: transparent;
 }
 
+.location-inline {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.location-co {
+    background-color: #3c3e42;
+    color: #002868;
+    height: 700px;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.location-img {
+    width: 5%;
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-info {
+    color: #FFFFFF;
+}
+
+.location-table {
+    margin: 10px;
+    padding: 5px;
+}
+
+.location-h1 {
+    color: #FFFFFF;
+}
+
+.location-space {
+    margin: 5px;
+    padding: 5px;
+    margin-left: 15%;
+}
+
 .right {
     background-color: transparent;
+}
+
+.map-space {
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    position: inherit;
+    text-align: center;
 }
 
 .nav {
@@ -253,7 +330,7 @@
     font-size: 12px;
     word-spacing: normal;
     letter-spacing: 8px;
-    background-color: #E0162B;
+    background-color: #BF0A30;
     color: #FFFFFF;
 }
 
@@ -302,6 +379,7 @@
 }
 
 
+
 /*-- End Nav --*/
 
 .tree-section {
@@ -311,9 +389,21 @@
     padding: 15px;
 }
 
+.target-location{
+    width: 4%;
+}
+
+.tugwarimg{
+    width: 50%;
+}
+
+.stay-informed-btn{
+    margin: 20px;
+    padding: 5px;
+}
+
 
 /*--- Footer ----*/
-
 .hr-sect {
     display: flex;
     flex-basis: 100%;
@@ -364,7 +454,7 @@
 }
 
 .media-table a:hover {
-    color: red;
+    color: #BF0A30;
     transition: 1s;
 }
 
