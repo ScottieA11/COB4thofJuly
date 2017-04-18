@@ -37,13 +37,13 @@
     background-position: center;
 }
 
-.bbq-img{
+.bbq-img {
     width: 30%;
 }
 
 .Brownsville {
     object-position: center;
-    display: block;
+    display: relative;
     margin: 10px;
     max-height: 200px;
     max-width: 60%;
@@ -125,12 +125,18 @@
     background-color: #bf0a30;
 }
 
-.carousel-li{
+.carousel-li {
     background-color: #bf0a30;
 }
 
-.carousel.text{
-    
+.carousel.text {}
+
+.celebration-e-text{
+    position: relative;
+    margin: 15px;
+    left: auto;
+    padding: 5px;
+    margin-left: 15%;
 }
 
 .COBNavLogo {
@@ -247,15 +253,89 @@
     background-repeat: no-repeat;
     width: inherit;
     margin: auto;
-    overflow: hidden;
+    overflow: auto;
+    height: inherit;
+    
+}
+
+.j-donate-btn {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent !important;
+    border: #002868;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    background-image: -moz-linear-gradient(top, #002868, #002868);
+    background-image: -ms-linear-gradient(top, #002868, #002868);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #002868), color-stop(100%, #002868));
+    background-image: -webkit-linear-gradient(top, #002868, #002868);
+    background-image: -o-linear-gradient(top, #002868, #002868);
+    background-image: linear-gradient(#002868, #002868);
+    border-color: #FFFFFF #FFFFFF hsl(360, 100%, 100%);
+    color: #FFFFFF !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.00);
+}
+
+.j-donate-btn:focus,
+.j-donate-btn.focus {
+    background-color: transparent !important;
+    border-color: #002868 !important;
+}
+
+.j-donate-btn:hover {
+    background-color: transparent !important;
+    border-color: #002868 !important;
+    border-style: solid;
 }
 
 .jumbotron {
     margin: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: #BF0A30;
     height: 900px;
+    background-image: url('../assets/images/americanjumbo.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.j-higher-text {
+    position: absolute;
+    width: 350px;
+    text-align: justify;
+    font-size: 12;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-style: oblique;
+    font-stretch: expanded;
+    top: 52%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.j-lower-text {
+    position: absolute;
+    width: 700px;
+    text-align: right;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-style: oblique;
+    top: 67%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .left {
@@ -334,8 +414,10 @@
     font-size: 12px;
     word-spacing: normal;
     letter-spacing: 8px;
-    background-color: #BF0A30;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #bf0a30;
+    position: fixed;
+    width: auto;
 }
 
 .navbar-header {
@@ -361,7 +443,7 @@
     margin-bottom: auto;
     padding-top: 5%;
     padding-left: 70%;
-    color: white;
+    color: #bf0a30;
     float: none;
     vertical-align: middle;
 }
@@ -379,12 +461,23 @@
 }
 
 .nav.navbar-nav.navbar-nav li a {
-    color: white;
+    color: #bf0a30;
 }
 
 
+.navbar .navbar-toggle{
+    background-color: #FFFFFF;
+}
 
-/*-- End Nav --*/
+.navbar .navbar-toggle .icon-bar {
+    background-color: #bf0a30;
+}
+
+.our-text{
+    color: #bf0a30;
+    font-weight: 300;
+    
+}
 
 .tree-section {
     background-color: #002868;
@@ -393,21 +486,22 @@
     padding: 15px;
 }
 
-.target-location{
+.target-location {
     width: 4%;
 }
 
-.tugwarimg{
+.tugwarimg {
     width: 50%;
 }
 
-.stay-informed-btn{
+.stay-informed-btn {
     margin: 20px;
     padding: 5px;
 }
 
 
 /*--- Footer ----*/
+
 .hr-sect {
     display: flex;
     flex-basis: 100%;

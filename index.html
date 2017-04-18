@@ -47,6 +47,7 @@
             };
             s.parentNode.insertBefore(tk, s)
         })(document);
+
     </script>
 
     <!--[if IE]>
@@ -185,7 +186,29 @@
 
     <!--Start Navbar-->
     <section>
-        <nav class="navbar" role="navigation">
+<!--Start Navbar
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!--.nav-collapse -->
+
+        <nav class="navbar-fixed-top navbar" role="navigation">
             <div class="container">
                 <div class="navbar-header ">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -214,6 +237,10 @@
     <!--JUMBOTRON Header -->
     <section>
         <div class="jumbotron">
+
+            <div class="j-higher-text">
+                <h3>CITY OF</h3>
+            </div>
             <div class="Brownsville">
                 <svg version="1.1" id="brownsville" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 960 560" style="enable-background:new 0 0 960 560;" xml:space="preserve">
                     <style type="text/css">
@@ -239,6 +266,14 @@
                     </g>
                 </svg>
             </div>
+            <div class="j-lower-text">
+
+                <h3>2017 FOURTH OF JULY CELEBRATION!</h3>
+
+            </div>
+            <div>
+                <button type="button" style="align-items:center;" class="btn j-donate-btn" aria-label="center Align"> Learn More </button>
+            </div>
         </div>
     </section>
     <!-- END OF JTRON-->
@@ -247,6 +282,7 @@
     <section>
         <div class="container-fluid about-co">
             <div class="table-responsive ">
+                <h3 class="celebration-e-text" style="color:#002868;"><span class="our-text">ABOUT THE</span><br>CELEBRATION</h3>
                 <div class="c-american-text">
                     <img class="about-img" src="assets/images/about.svg">
                     <h1>City of Brownsville 4th of July</h1>
@@ -279,18 +315,19 @@
     <section id="about">
         <!--Retains div between each section.-->
         <div id="myCarousel" class="info-section carousel slide" data-ride="carousel">
+            <h3 class="celebration-e-text" style="color:#002868;"><span class="our-text">CELEBRATION</span><br>EVENTS</h3>
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active carousel-li"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
             </ol>
             <div class="carousel-inner carousel-text" role="listbox">
-                <div class="item active ">
+                <div class="item active">
                     <div class="container-fluid">
                         <div class="carousel-caption">
-                           <div>
-                               <img src="assets/images/bbq.svg" class="bbq-img">
-                           </div>
+                            <div>
+                                <img src="assets/images/bbq.svg" class="bbq-img">
+                            </div>
                             <h1>BBQ Cook-Off</h1>
                             <p>First annual Salute to Freedom barbecue cook-off. Is a new event for the 4th of July 2017. With a guaranteed payout of $5,000. this will be an event not to miss. Fun and entertainment for all the family.
                                 <br> To register or have questions.
@@ -303,9 +340,9 @@
                 <div class="item">
                     <div class="container-fluid">
                         <div class="carousel-caption">
-                           <div>
-                               <img src="assets/images/tugofwar.svg" class="tugwarimg">
-                           </div>
+                            <div>
+                                <img src="assets/images/tugofwar.svg" class="tugwarimg">
+                            </div>
                             <h1>Tug of War</h1>
                             <p>Red To Blue tug-of-war. Traditional competition of wit and Grit. A competition between police officers and Firemen. Guaranteed to be entertaining for all spectators and participants. Each team will be fighting for the trophy. Which will end up in the respective winning teams Department until It can be defended next year! For tug-of-war information and registration please send emails to strev@cob4th.com</p>
                             <!-- Button to Register -->
@@ -350,7 +387,7 @@
             <div class="table-fluid donation-table">
                 <div class="donation-location donation-image">
                     <img class="donation-img-size" src="assets/images/donation@4x.png" alt="">
-                    <h2 class="donation-image">Our Donors</h2>
+                    <h2 class="donation-image"> <span class="our-text">OUR</span> <br> DONORS</h2>
                 </div>
                 <div class="donation-text">
                     <h1>Become a Donor!</h1>
@@ -377,7 +414,7 @@
             <div class="table-responsive location-table">
                 <div class="location-space">
                     <img src="assets/images/location.svg" class="location-img location-inline">
-                    <h1 class="location-inline location-h1">Location</h1>
+                    <h1 class="location-inline location-h1"> <span class="our-text">The</span> <br>Location</h1>
                 </div>
                 <div class="row map-space">
                     <div id="googleMap" class="event-map col-md-8"></div>
@@ -406,6 +443,7 @@
             type: 'oneByOne',
             duration: 150
         }),
+
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
