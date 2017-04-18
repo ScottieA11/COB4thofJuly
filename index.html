@@ -16,8 +16,11 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/effect.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <link rel="stylesheet" href="stylesheets/main.css">
+
     <script>
         (function(d) {
             var config = {
@@ -47,6 +50,31 @@
             };
             s.parentNode.insertBefore(tk, s)
         })(document);
+
+        function submit_form() {
+          xmlhttp = new XMLHttpRequest();
+          var register_form = document.getElementById('register_form');
+
+          cob_event = document.getElementById('event').value,
+          name = document.getElementById('name').value,
+          phone = document.getElementById('phone').value,
+          address = document.getElementById('address').value,
+          state = document.getElementById('state').value,
+          zip = document.getElementById('zip').value;
+          email = document.getElementById('email').value;
+
+          xmlhttp.open('GET', 'register-process.php?submit_form=yes&event='+cob_event+'&name='+name+'&email='+email+'&phone='+phone+'&address='+address+'&state='+state+'&zip='+zip, true);
+          xmlhttp.send();
+
+          $('#register-modal').modal('hide');
+          $('.modal-backdrop').remove();
+          register_form.reset();
+          return false;
+        }
+
+        function submit_confirm() {
+          alert('Your form has been submitted!');
+        }
     </script>
 
     <!--[if IE]>
@@ -66,37 +94,39 @@
         <div class="modal-dialog modal-sm">
           <div class="modal-content">
             <div class="modal-header">
+              <div id="reg-modal"></div>
               <button class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-              <form method="post">
+              <form onsubmit="return submit_form();" id="register_form">
                 <div class="form-group">
                   <label for="states">Event*</label>
-                  <select id="event" list="event" class="form-control" name="event" required>
-                    <option selected disabled>Select Your Event</option>
+                  <select id="event" list="event" class="form-control" required>
+                    <option selected disabled hidden>Select Your Event</option>
                     <option value="ToW">Tug of War</option>
                     <option value="BBQ">BBQ Cook Off</option>
+                    <option value="both">Both</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="name">Name*</label>
-                  <input type="text" id="name" name="name" class="form-control" placeholder="Enter First & Last Name" required>
+                  <input type="text" id="name" class="form-control" placeholder="Enter First & Last Name" required>
                 </div>
                 <div class="form-group">
                   <label for="email">Email*</label>
-                  <input type="email" name="email" id="email"class="form-control" placeholder="Enter Email Address" required>
+                  <input type="email" id="email" class="form-control" placeholder="Enter Email Address" required>
                 </div>
                 <div class="form-group">
                   <label for="contact">Contact Number*</label>
-                  <input type="tel" id="contact" name="phone" class="form-control" placeholder="123-456-7890" pattern="^\d{3}-\d{3}-\d{4}$" required>
+                  <input type="text" id="phone" class="form-control" placeholder="123-456-7890" minlength="12" maxlength="12" pattern="^\d{3}-\d{3}-\d{4}$" required>
                 </div>
                 <div class="form-group">
                   <label for="address">Address*</label>
-                  <textarea class="form-control" name="address" placeholder="123 ABC Street, City" style="resize:none" required></textarea>
+                  <textarea class="form-control" id="address" placeholder="123 ABC Street, City" style="resize:none" required></textarea>
                 </div>
                 <div class="form-group">
                   <label for="states">State*</label>
-                  <select id="states" list="states" class="form-control" name="state" required>
+                  <select id="state" list="states" class="form-control" required>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -152,14 +182,14 @@
                 </div>
                 <div class="form-group">
                   <label for="contact">Zip Code*</label>
-                  <input type="text" id="zip" name="zip" class="form-control" placeholder="Enter Zip Code" minlength="5" maxlength="5" required>
+                  <input type="text" id="zip" class="form-control" placeholder="Enter Zip Code" minlength="5" maxlength="5" required>
                 </div>
                 <div class="form-group">
-                  <input type="submit" value="Submit" name="order_submit" class="btn btn-success btn-block">
+                  <button onclick="submit_confirm();" class="btn btn-success btn-block">Submit</button>
                 </div>
               </form>
             </div>
-            <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal">Close</button></div>
+            <div class="modal-footer"><button class="btn btn-danger" data-dismiss="modal">Close</button></div>
           </div>
         </div>
       </div>
