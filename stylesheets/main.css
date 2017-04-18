@@ -42,16 +42,14 @@
 }
 
 .Brownsville {
-    object-position: center;
-    display: relative;
-    margin: 10px;
+    display:inherit;
+    margin: auto;
+    margin-top: 8%;
     max-height: 200px;
     max-width: 60%;
     width: auto;
     left: 20%;
-    position: relative;
-    align-self: ;
-    ;
+    position: inherit;
 }
 
 .btn-custom {
@@ -416,7 +414,6 @@
     letter-spacing: 8px;
     background-color: #FFFFFF;
     color: #bf0a30;
-    position: fixed;
     width: auto;
 }
 
