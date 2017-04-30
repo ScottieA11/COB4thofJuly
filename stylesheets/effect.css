@@ -19,9 +19,17 @@
 		url('../fonts/feather/feather.svg?-9jv4cc#feather') format('svg');
 }
 
+
+@media all and (max-width: 500px) {
+    /* screen size until 500px */
+    .ip-header {
+     	top: 7%;
+    }
+}
+
 .ip-header {
 	position: fixed;
-	top: 12%;
+	top: 5%;
 	z-index: 100;
 	min-height: 480px;
 	width: 100%;
