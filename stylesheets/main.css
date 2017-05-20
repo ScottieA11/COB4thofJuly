@@ -407,6 +407,7 @@
     background-color: #FFFFFF;
     color: #bf0a30;
     width: auto;
+    z-index: 9999;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -520,6 +521,9 @@
     /* screen size until 500px */
     .carousel-inner .carousel-caption>p {
         font-size: 1.6em;
+        position: absolute;
+        text-align: center;
+        
         /* 0.8x default size */
     }
 }
