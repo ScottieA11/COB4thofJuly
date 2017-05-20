@@ -22,6 +22,7 @@
 
 .about-co {
     height: 800px;
+    border-color: transparent;
     position: relative;
 }
 
@@ -37,21 +38,18 @@
     background-position: center;
 }
 
-.bbq-img{
+.bbq-img {
     width: 30%;
 }
 
 .Brownsville {
-    object-position: center;
-    display: block;
-    margin: 10px;
-    max-height: 200px;
+    margin: auto;
+    margin-top: 300px;
     max-width: 60%;
     width: auto;
-    left: 20%;
+    
+    text-align: center;
     position: relative;
-    align-self: ;
-    ;
 }
 
 .btn-custom {
@@ -125,12 +123,18 @@
     background-color: #bf0a30;
 }
 
-.carousel-li{
+.carousel-li {
     background-color: #bf0a30;
 }
 
-.carousel.text{
-    
+.carousel.text {}
+
+.celebration-e-text {
+    position: relative;
+    margin: 15px;
+    left: auto;
+    padding: 5px;
+    margin-left: 15%;
 }
 
 .COBNavLogo {
@@ -230,10 +234,10 @@
 }
 
 .footer-section {
-    height: 200px;
+    height: auto;
     background-color: #002868;
     width: auto;
-    margin: 0px;
+    margin: auto;
     border-color: gray;
     border-width: thin;
 }
@@ -247,15 +251,88 @@
     background-repeat: no-repeat;
     width: inherit;
     margin: auto;
-    overflow: hidden;
+    overflow: auto;
+    height: inherit;
+}
+
+.j-donate-btn {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent !important;
+    border: #002868;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    background-image: -moz-linear-gradient(top, #002868, #002868);
+    background-image: -ms-linear-gradient(top, #002868, #002868);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #002868), color-stop(100%, #002868));
+    background-image: -webkit-linear-gradient(top, #002868, #002868);
+    background-image: -o-linear-gradient(top, #002868, #002868);
+    background-image: linear-gradient(#002868, #002868);
+    border-color: #FFFFFF #FFFFFF hsl(360, 100%, 100%);
+    color: #FFFFFF !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.00);
+}
+
+.j-donate-btn:focus,
+.j-donate-btn.focus {
+    background-color: transparent !important;
+    border-color: #002868 !important;
+}
+
+.j-donate-btn:hover {
+    background-color: transparent !important;
+    border-color: #002868 !important;
+    border-style: solid;
 }
 
 .jumbotron {
     margin: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: #BF0A30;
     height: 900px;
+    background-image: url('../assets/images/americanjumbo.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.j-higher-text {
+    position: absolute;
+    width: 350px;
+    text-align: justify;
+    font-size: 12;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-style: oblique;
+    font-stretch: expanded;
+    top: 52%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.j-lower-text {
+    position: absolute;
+    width: 700px;
+    text-align: right;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-style: oblique;
+    top: 67%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .left {
@@ -272,8 +349,7 @@
     background-color: #3c3e42;
     color: #002868;
     height: 700px;
-    width: auto;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 
@@ -286,10 +362,12 @@
 
 .location-info {
     color: #FFFFFF;
+    text-align: center;
+    width: inherit;
 }
 
 .location-table {
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
 }
 
@@ -308,12 +386,12 @@
 }
 
 .map-space {
-    margin: 5px;
-    padding: 5px;
+    margin: auto;
+    padding: auto;
     height: auto;
-    width: auto;
+    width: inherit;
     max-width: 100%;
-    position: inherit;
+    position: relative;
     text-align: center;
 }
 
@@ -322,27 +400,15 @@
 }
 
 .navbar {
-    height: 150px;
-    align-items: baseline;
-    border: 0;
-    padding: auto;
-    margin: auto;
-    margin-bottom: 10px;
-    border-radius: 0;
-    margin-bottom: 0;
     font-family: "aller", sans-serif;
     font-size: 12px;
     word-spacing: normal;
     letter-spacing: 8px;
-    background-color: #BF0A30;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #bf0a30;
+    width: auto;
+    z-index: 9999;
 }
-
-.navbar-header {
-    background-color: transparent;
-}
-
-.navbar-load {}
 
 .navbar-default .navbar-nav>li>a {
     font-family: "aller", sans-serif;
@@ -352,39 +418,30 @@
     color: white;
 }
 
-.navbar-brand {
-    background-color: transparent;
-}
-
-.navbar .navbar-nav {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-top: 5%;
-    padding-left: 70%;
-    color: white;
-    float: none;
-    vertical-align: middle;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
 .navbar-nav li a:hover {
     color: #4286f4 !important;
-    background-color: transparent;
     border: 1px;
     border-bottom-width: thin;
     border-color: #FFFFFF;
 }
 
 .nav.navbar-nav.navbar-nav li a {
-    color: white;
+    color: #bf0a30;
 }
 
+.navbar .navbar-toggle {
+    background-color: #FFFFFF;
+}
 
+.navbar .navbar-toggle .icon-bar {
+    background-color: #bf0a30;
+    overflow: hidden;
+}
 
-/*-- End Nav --*/
+.our-text {
+    color: #bf0a30;
+    font-weight: 300;
+}
 
 .tree-section {
     background-color: #002868;
@@ -393,21 +450,27 @@
     padding: 15px;
 }
 
-.target-location{
+
+.table-responsive{
+    border-color: transparent !important;
+}
+
+.target-location {
     width: 4%;
 }
 
-.tugwarimg{
+.tugwarimg {
     width: 50%;
 }
 
-.stay-informed-btn{
+.stay-informed-btn {
     margin: 20px;
     padding: 5px;
 }
 
 
 /*--- Footer ----*/
+
 .hr-sect {
     display: flex;
     flex-basis: 100%;
@@ -434,6 +497,7 @@
     color: white;
     font-size: 15px;
     font-weight: bold;
+    text-align: center;
 }
 
 .footer-right {
@@ -442,6 +506,42 @@
     color: white;
     font-size: 15px;
     font-weight: bold;
+    text-align: center;
+}
+
+@media all and (max-width: 500px) {
+    /* screen size until 500px */
+    body {
+        font-size: 1.2em;
+        /* 0.8x default size */
+    }
+}
+
+@media all and (max-width: 500px) {
+    /* screen size until 500px */
+    .carousel-inner .carousel-caption>p {
+        font-size: 1.6em;
+        position: absolute;
+        text-align: center;
+        
+        /* 0.8x default size */
+    }
+}
+
+@media all and (max-width: 500px) {
+    /* screen size until 500px */
+    .map-space .event-map {
+        width: 70%;
+        height: 250px;
+        margin-left: 15%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    /* screen size until 500px */
+    .jumbotron {
+        height: 500px;
+    }
 }
 
 .media-table {
@@ -470,3 +570,5 @@
     text-align: center;
     padding-left: 3px;
 }
+
+
